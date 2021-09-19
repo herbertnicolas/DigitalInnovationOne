@@ -4,13 +4,14 @@ namespace DigitalInnovationOne
 {
     class Program
     {
-        int numeroDeVezes = 5;
-        static void Main(string[] args)
-        {
-            
-            for(int i =0; i<numeroDeVezes; i++){
-                Console.WriteLine($"Hello World! {i}");
-            }
+        static void Main(string[] args){
+            Pilha p = new Pilha();
+            p.Empilha(1);
+            p.Empilha(10);
+            p.Empilha(100);
+            Console.WriteLine(p.Desempilha());
+            Console.WriteLine(p.Desempilha());
+            Console.WriteLine(p.Desempilha());
         }
     }
 }
